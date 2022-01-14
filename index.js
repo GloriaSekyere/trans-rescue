@@ -11,7 +11,7 @@ let indicatorOne = document.getElementById("indicator-one");
 let indicatorTwo = document.getElementById("indicator-two");
 let indicatorThree = document.getElementById("indicator-three");
 
-function whoWeAre() {
+titleOne.onclick = function() {
           
       titleOne.style.fontWeight = 700;
       titleTwo.style.fontWeight = 400;
@@ -26,7 +26,7 @@ function whoWeAre() {
       indicatorThree.style.visibility = "hidden";
 }
       
-function whatWeDo() {
+titleTwo.onclick = function() {
           
       titleOne.style.fontWeight = 400;
       titleTwo.style.fontWeight = 700;
@@ -41,7 +41,7 @@ function whatWeDo() {
       document.getElementById("indicator-three").style.visibility = "hidden";
 }
       
-function whatWeDont() {
+titleThree.onclick = function() {
 
       titleOne.style.fontWeight = 400;
       titleTwo.style.fontWeight = 400;
