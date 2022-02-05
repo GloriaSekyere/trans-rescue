@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  flex-direction: row; //modified
+  justify-content: space-between; //added
+  align-items: center;
+  margin: 7.5vh 7.5vw 0; //modified
+}
+
+.logo {
+  width: 15rem; //modified
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0; //modified
+  width: 20%; //modified
+  color: $white; //modified
+  font: {
+    size: 18px; //modified
+    weight: 500; //modified
+  };
+}
+
+.en, .nl { //added
+  transition: all 0.5s;
+  &:hover {
+    color: $blue;
+  }
+}
+
+main {
+  
+}

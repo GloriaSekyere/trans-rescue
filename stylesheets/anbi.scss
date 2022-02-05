@@ -4,14 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-@import "variables";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  cursor: url('../images/cursor.cur'), auto;
 }
 
 body {
@@ -34,7 +27,7 @@ header {
 }
 
 .logo {
-  width: 7.5rem;
+  width: 10rem;
   img {
     max-width: 100%;
     height: auto;
@@ -45,20 +38,27 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
-  width: 75%;
-  color: $blue;
+  margin-top: 1.5rem;
+  width: 50%;
   font: {
     size: 18px;
-    weight: 700;
+    weight: 500;
   };
 }
 
+
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
   width: 80%;
-  margin: 2rem auto;
+  margin: 1rem auto;
+}
+
+.english-group {
+  display: block;
+}
+.dutch-group {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  @import "desktop-anbi";
 }

@@ -238,10 +238,6 @@ main {
   .logo {
     width: 15rem;
   }
-  .logo img {
-    max-width: 100%;
-    height: auto;
-  }
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
