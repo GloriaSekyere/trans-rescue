@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: url('../images/cursor.cur'), auto;
 }
 
 body {
@@ -42,15 +43,11 @@ nav {
   color: $blue;
   font: {
     size: 20px;
-    weight: 700;
+    weight: 600;
   };
 }
 
 // Styles for Contact and Modal
-.contact--text {
-    transition: all 0.5s;
-}
-
 .modal-backdrop {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -94,7 +91,7 @@ nav {
   right: 10px;
   font: {
     size: 22.5px;
-    weight: 700;
+    weight: 600;
   }
 }
 
@@ -131,7 +128,7 @@ main {
 }
 
 #title-one {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 // Styles for fist indicator
@@ -188,4 +185,8 @@ main {
 
 #what-we-dont {
   display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  @import "desktop";
 }
