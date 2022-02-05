@@ -1,0 +1,191 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $white;
+  font-family: "Poppins", sans-serif;
+  background: {
+    image: url(../images/bg.png);
+    repeat: no-repeat;
+    size: cover;
+    attachment: fixed;
+    position: center center;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5vh 7.5vw 0;
+}
+
+.logo {
+  width: 10rem;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 75%;
+  color: $blue;
+  font: {
+    size: 20px;
+    weight: 700;
+  };
+}
+
+// Styles for Contact and Modal
+.contact--text {
+    transition: all 0.5s;
+}
+
+.modal-backdrop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background: {
+    color: rgb(0,0,0); /* Fallback color */
+    color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+}
+
+.modal-content {
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contact-item{
+  width: 3rem;
+  margin: 0 1rem;
+}
+
+.icon {
+  max-width: 100%;
+  height: auto;
+}
+
+.close-icon {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font: {
+    size: 22.5px;
+    weight: 700;
+  }
+}
+
+.anbi {
+  display: block;
+  text-decoration: none;
+  color: $blue;
+  letter-spacing: 3px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+// Styles for About Us titles
+.titles {
+  flex-basis: 30%;
+
+  .title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+  
+    p {
+      margin-left: 1rem;
+      transition: all 0.5s;
+    }
+  }
+}
+
+#title-one {
+  font-weight: 700;
+}
+
+// Styles for fist indicator
+.indicator {
+  width: 1.25rem;
+  margin-right: 1rem;
+  img {
+    max-width: 100%;
+    height: auto;
+    visibility: visible;
+  }
+}
+
+#ind-1 {
+  max-width: 100%;
+  height: auto;
+  visibility: visible;
+}
+
+#ind-2 {
+  @extend #ind-1;
+  visibility: hidden;
+}
+
+#ind-3 {
+  @extend #ind-1;
+  visibility: hidden;
+}
+
+// Styles for About Us body
+.about-info {
+  margin-top: 1rem;
+  flex-basis: 70%;
+
+  .headline {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  .body-text {
+    line-height: 1.9;
+  }
+}
+
+#who-we-are {
+  display: block;
+}
+
+#what-we-do {
+  display: none;
+}
+
+#what-we-dont {
+  display: none;
+}

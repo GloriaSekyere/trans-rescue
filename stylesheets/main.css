@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5vh 7.5vw 0;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.5rem;
+  width: 75%;
+  color: #56c3ed;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.contact--text {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.modal-backdrop {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  left: 0;
+  top: 0;
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.contact-item {
+  width: 3rem;
+  margin: 0 1rem;
+}
+
+.icon {
+  max-width: 100%;
+  height: auto;
+}
+
+.close-icon {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 22.5px;
+  font-weight: 700;
+}
+
+.anbi {
+  display: block;
+  text-decoration: none;
+  color: #56c3ed;
+  letter-spacing: 3px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.titles {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.titles .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1rem;
+}
+
+.titles .title p {
+  margin-left: 1rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#title-one {
+  font-weight: 700;
+}
+
+.indicator {
+  width: 1.25rem;
+  margin-right: 1rem;
+}
+
+.indicator img {
+  max-width: 100%;
+  height: auto;
+  visibility: visible;
+}
+
+#ind-1, #ind-2, #ind-3 {
+  max-width: 100%;
+  height: auto;
+  visibility: visible;
+}
+
+#ind-2 {
+  visibility: hidden;
+}
+
+#ind-3 {
+  visibility: hidden;
+}
+
+.about-info {
+  margin-top: 1rem;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.about-info .headline {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.about-info .body-text {
+  line-height: 1.9;
+}
+
+#who-we-are {
+  display: block;
+}
+
+#what-we-do {
+  display: none;
+}
+
+#what-we-dont {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
