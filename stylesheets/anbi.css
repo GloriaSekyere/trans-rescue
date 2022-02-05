@@ -68,6 +68,117 @@ main {
   display: none;
 }
 
+.title h1 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.title h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.title h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menu-text {
+  margin-top: 25px;
+  padding: 5px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 0.5px solid white;
+}
+
+.menu a:first-child {
+  border-top: 0.5px solid white;
+}
+
+.menu a:last-child {
+  border-bottom: none;
+}
+
+section {
+  margin: 25px 0;
+}
+
+section h2 {
+  padding: 15px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+section h3 {
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+section p {
+  margin-bottom: 7.5px;
+}
+
+#data div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#data div p:first-child {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+#data div p:last-child {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+#managing-board p {
+  margin-bottom: 10px;
+}
+
+.table-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.table-data p:first-child {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.table-data p:last-child {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
 @media screen and (min-width: 1280px) {
   header {
     display: -webkit-box;
