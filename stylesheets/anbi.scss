@@ -1,0 +1,64 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url('../images/cursor.cur'), auto;
+}
+
+body {
+  color: $white;
+  font-family: "Poppins", sans-serif;
+  background: {
+    image: url(../images/bg.png);
+    repeat: no-repeat;
+    size: cover;
+    attachment: fixed;
+    position: center center;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5vh 7.5vw 0;
+}
+
+.logo {
+  width: 10rem;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 50%;
+  font: {
+    size: 18px;
+    weight: 500;
+  };
+}
+
+
+main {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.english-group {
+  display: block;
+}
+.dutch-group {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  @import "desktop-anbi";
+}
