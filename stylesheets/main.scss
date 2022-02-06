@@ -39,12 +39,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin-top: 1.5rem;
-  width: 75%;
-  color: $blue;
+  width: 60%;
   font: {
-    size: 20px;
-    weight: 600;
-  };
+    size: 18px;
+    weight: 500;
+  }
 }
 
 // Styles for Contact and Modal
@@ -98,7 +97,7 @@ nav {
 .anbi {
   display: block;
   text-decoration: none;
-  color: $blue;
+  color: $white;
   letter-spacing: 3px;
 }
 

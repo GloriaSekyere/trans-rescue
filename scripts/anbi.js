@@ -1,9 +1,7 @@
 let menuText = document.querySelector(".menu-text");
 let menu = document.querySelector(".menu");
-let isOpen = false;
-
 let menuItems = document.querySelectorAll(".menu-item");
-
+let isOpen = false;
 
 menuText.onclick = () => {
   isOpen = (isOpen == false) ? true : false;
@@ -26,9 +24,17 @@ menuItems.forEach(item => {
 });
 
 
+let enBtn = document.querySelector(".en");
+let nlBtn = document.querySelector(".nl");
+let english = document.querySelector(".english-group");
+let dutch = document.querySelector(".dutch-group");
 
-window.onclick = (event) => {
-  if (event.target == document.body) {
-    menu.style.display = "none";
-  }
+enBtn.onclick = () => {
+  english.style.display = "block";
+  dutch.style.display = "none";
+}
+
+nlBtn.onclick = () => {
+  english.style.display = "none";
+  dutch.style.display = "block";
 }

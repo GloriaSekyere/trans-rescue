@@ -49,7 +49,7 @@ nav {
 
 main {
   width: 80%;
-  margin: 1rem auto;
+  margin: 1rem auto 3rem;
 }
 
 
@@ -62,10 +62,12 @@ main {
 }
 
 .title {
+  margin-bottom: 25px;
   h1 {
     text-align: center;
+    margin-bottom: 5px;
     font: {
-      size: 20px;
+      size: 18px;
       weight: 700;
     }
   }
@@ -73,7 +75,7 @@ main {
     text-align: center;
     font: {
       size: 18px;
-      weight: 600;
+      weight: 500;
     }
   }
   h3 {
@@ -85,8 +87,20 @@ main {
   }
 }
 
+.download {
+  @extend .menu-text;
+  border-bottom: 1px solid $white;
+  a {
+    text-decoration: none;
+    color: $white;
+    &:visited {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}
+
 .menu-text {
-  margin-top: 25px;
   padding: 5px 0;
   background-color: rgba(0,0,0,0.5);
   text-align: center;
@@ -98,7 +112,11 @@ main {
 
 .menu {
   display: none;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.8);
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
   a {
     display: block;
     color: white;
@@ -111,6 +129,9 @@ main {
     }
     &:last-child {
       border-bottom: none;
+    }
+    &:hover {
+      background-color: rgba(0,0,0,0.8);
     }
   }
 }
@@ -175,12 +196,6 @@ section {
 }
 
 
-
-
-
-
-
-
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
   @import "desktop-anbi";
 }

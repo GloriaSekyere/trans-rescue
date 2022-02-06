@@ -15,7 +15,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin-top: 0; //modified
-  width: 20%; //modified
+  width: 150px; //modified
   color: $white; //modified
   font: {
     size: 18px; //modified
@@ -30,6 +30,72 @@ nav {
   }
 }
 
-main {
-  
+.menu-text {
+  width: 500px; //added
+  margin: auto; //modified
+  padding: 5px 0;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  font: {
+    size: 18px;
+    weight: 500;
+  }
+  &:hover {
+    background-color: rgba(86,195,237,0.5);
+  }
+}
+
+.menu {
+  width: 500px; //added
+  margin: auto; //added
+  display: none;
+  background-color: rgba(0,0,0,0.8);
+  a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 0.5px solid $white;
+    &:first-child {
+      border-top: 0.5px solid $white;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+    &:hover {
+      background-color: rgba(232,159,175,0.5);
+    }
+  }
+}
+
+#data {
+  div {
+    display: flex;
+    justify-content: space-between;
+    width: 650px; //added
+    p {
+      &:first-child {
+        flex-basis: 180px; //modified
+      }
+      &:last-child {
+        flex-basis: 450px; //modified
+      }
+    }
+  }
+}
+
+.table-data {
+  display: flex;
+  justify-content: space-between;
+  width: 400px; //added
+
+  p {
+    &:first-child {
+      flex-basis: 70%; //modified
+    }
+    &:last-child {
+      flex-basis: 20%; //modified
+    }
+  }
 }
